@@ -7,15 +7,15 @@ class Number{
     static const int size = 30;//разобраться
         char num[size];
         int m;
-        long int number; 
     public:
     int set(char*);
-//Number();
-
+    int set(long );
+Number();
+char* dopcod();
 int getSize();
 void getnum();
-int dopcod();
-int plus();
+
+int plus(Number *);
 int increase();
 int decrease();
 

@@ -4,10 +4,24 @@
 int main()
 {
 Number z;
-char s[5];
-std::cin>>s;
+Number z2;
+//char s[5];
+//std::cin>>s;
+//z.set(s);
+long s=-1111;
 z.set(s);
+long s2=1111;
+z2.set(s2);
+//char *q=z2.dopcod();
+//for(int i=0;i<z.getSize();i++)
+//std::cout<<q[i];
+//std::cout<<std::endl;
+
+z.plus(&z2);
 z.print();
+
+
+
     //std::cout<<sizeof(int)<<" "<<sizeof(long);
     /*
     Number z;
