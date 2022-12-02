@@ -14,7 +14,7 @@ Number();
 char* dopcod();
 int getSize();
 void getnum();
-
+int minus(Number*);
 int plus(Number *);
 int increase();
 int decrease();
