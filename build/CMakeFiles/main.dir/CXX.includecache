@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fedor/hz/lab3s3/main.cpp
+prog3.cpp
+/home/fedor/hz/lab3s3/prog3.cpp
+prog3.h
+/home/fedor/hz/lab3s3/prog3.h
+
+/home/fedor/hz/lab3s3/prog3.cpp
+prog3.h
+/home/fedor/hz/lab3s3/prog3.h
+
+/home/fedor/hz/lab3s3/prog3.h
+iostream
+-
+string.h
+-
+

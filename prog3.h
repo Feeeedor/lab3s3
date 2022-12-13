@@ -2,24 +2,28 @@
 //#include "prog3.cpp"
 #include <iostream>
 #include <string.h>
-class Number{
-    private:
-    static const int size = 30;//разобраться
-        char num[size];
-        int m;
-    public:
-    int set(char*);
-    int set(long );
-Number();
-char* dopcod();
-int getSize();
-void getnum();
-int minus(Number*);
-int plus(Number *);
-int increase();
-int decrease();
+class Number
+{
+private:
+    static const int size = 21;
+    char num[size];
+    int m;
 
+public:
+    int getM();
+    char *getNum();
+    void set(char *);
+    void set(long);
+       
+    Number();
+    char *dopcod();
+    int getSize();
+    int minus(Number *);
+    int plus(Number *);
+    int increase();
+    int decrease();
+    int input();
     void print();
 };
-
-int Number_set();
+int dialog(Number &z);
+//int Number_set();
