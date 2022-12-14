@@ -5,7 +5,4 @@ int main()
 {
 Number z;
 dialog(z);
-
-
-
 }

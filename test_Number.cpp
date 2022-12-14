@@ -39,24 +39,19 @@ ASSERT_STREQ(s.getNum(), "10000000000000123456");
 }
 
 
-
-
-
-/*
-
 TEST(dopcod, number_123456){
     Number s;
     s.set(123456);
     char *check=s.dopcod();
 ASSERT_STREQ(check, "00000000000000123456");
-delete(check);
+delete [] check;
 }
 TEST(dopcod, number_minus123456){
     Number s;
     s.set(-123456);
     char *check=s.dopcod();
 ASSERT_STREQ(check, "19999999999999876544");
-delete(check);
+delete[] check;
 }
 
 TEST(plus, 123456_plus_111111){
@@ -121,5 +116,5 @@ Number s;
     s.set(123456);
 s.increase();
 ASSERT_STREQ(s.getNum(), "00000000000001234560");
-}*/
+}
 

@@ -14,16 +14,14 @@ public:
     char *getNum();
     void set(char *);
     void set(long);
-       
     Number();
     char *dopcod();
     int getSize();
-    int minus(Number *);
-    int plus(Number *);
-    int increase();
-    int decrease();
+    void minus(Number *);
+    void plus(Number *);
+    void increase();
+    void decrease();
     int input();
     void print();
 };
 int dialog(Number &z);
-//int Number_set();
