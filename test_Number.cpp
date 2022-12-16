@@ -141,8 +141,18 @@ TEST (_plus_, 123){
     Number s2;
     s1.set(111);
     s2.set(123456);
-    Number s3=(s1+s2);
+    Number s3=s1+s2;
     ASSERT_STREQ(s1.getNum(), "0000000111");
     ASSERT_STREQ(s2.getNum(), "0000123456");
     ASSERT_STREQ(s3.getNum(), "0000123567");
+}
+TEST (_minus_, 123){
+    Number s1;
+    Number s2;
+    s1.set(111);
+    s2.set(123456);
+    Number s3=s1-s2;
+    ASSERT_STREQ(s1.getNum(), "0000000111");
+    ASSERT_STREQ(s2.getNum(), "0000123456");
+    ASSERT_STREQ(s3.getNum(), "1000123345");
 }

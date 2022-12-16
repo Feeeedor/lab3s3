@@ -336,3 +336,20 @@ Number::Number(const Number &q)
     m = q.m;
     
 }
+const Number Number::operator-(Number &second){
+Number newNumber;
+int j = num[0] - '0';
+    j = 1 - j;
+    num[0] = j + '0';
+    newNumber=*this+second;
+    if (newNumber.m)
+    {
+        j = newNumber.num[0] - '0';
+        j = 1 - j;
+        newNumber.num[0] = j + '0';
+    }
+    j = num[0] - '0';
+    j = 1 - j;
+    num[0] = j + '0';
+    return newNumber;
+}

@@ -14,6 +14,7 @@ public:
 const Number &operator=(const Number &second);
 const Number operator+(Number &second);
 Number (const Number &q);
+const Number operator-(Number &second);
     int getM();
     char *getNum();
     void set(char *);
