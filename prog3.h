@@ -1,13 +1,12 @@
 #pragma once
-//#include "prog3.cpp"
+
 #include <iostream>
 #include <string.h>
 
 class Number
 {
 private:
-    static const int size = 11;
-    char num[size];
+    char *num;
     int m;
 
 public:
@@ -20,13 +19,14 @@ const Number operator-(Number &second);
     void set(char *);
     void set(long);
     Number();
+    ~Number();
     char *dopcod();
-    int getSize();
+  
     void minus(Number *);
     void plus(Number *);
     void increase();
-    void decrease();
+   void decrease();
     int input();
     void print();
 };
-int dialog(Number &z);
+//int dialog(Number &z);
